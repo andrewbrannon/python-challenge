@@ -14,7 +14,6 @@ with open(budget_csv) as csv_file :
     print(f"Header: {csv_header}")
 
     #defining counter
-    counter = 0
     monthlist = []
     changelist = []
     monthly_change= []
@@ -54,7 +53,7 @@ print(f"Greatest Increase in Profits: Aug-16 ({positive_value})")
 print(f"Greatest Decrease in Profits: Feb-14 ({negative_value})")
 
 #create a new file       
-with open('Financial_Analysis.txt', 'w') as file:
+with open('Analysis/Financial_Analysis.txt', 'w') as file:
 
     #inputing information into text file
     file.write("Financial Analysis\n")
